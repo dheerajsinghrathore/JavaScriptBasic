@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>For Loops</title>
+    <script>
+      let num,
+        sumOfEven = 0,
+        sumOfOdd = 0;
+      num = Number(prompt("Enter a number: "));
+      for (let i = 1; i <= num; i++) {
+        i % 2 === 0 ? (sumOfEven += i) : (sumOfOdd += i);
+      }
+      document.write(`Sum of even numbers: ${sumOfEven}`);
+      document.write(`<br>Sum of odd numbers: ${sumOfOdd}`);
+    </script>
+  </head>
+
+  <body></body>
+</html>

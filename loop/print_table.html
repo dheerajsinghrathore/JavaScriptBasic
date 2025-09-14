@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loops</title>
+    <script>
+      let i = 1;
+      let text = Number(prompt(`Enter a number: `));
+      document.write(`<h2>Table of ${text}</h2>`);
+      document.write("<table border='1'>");
+      while (i <= 10) {
+        let result = i * text;
+        let bgColor = i % 2 === 0 ? "#f6f6f6" : "#ff0000";
+        document.write(`<tr style="background-color:${bgColor}">
+          <td>${text} * ${i}  = ${result}<td>
+            </tr>`);
+        i++;
+      }
+      document.write("</table>");
+    </script>
+  </head>
+
+  <body></body>
+</html>

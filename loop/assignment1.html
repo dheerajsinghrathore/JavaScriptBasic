@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Do While Loops</title>
+    <script>
+        let num, sum = 0, count = 0;
+        do {
+            num = Number(prompt("Enter a number: "));
+            sum += num + " ";
+            if (num == 0) break;
+            count++;
+        } while (num != 0);
+        document.write(sum);
+        document.write("<br>Count of numbers entered: " + count);
+        document.write(`<br>Average: ${sum / count.toFixed(2)}`);
+    </script>
+  </head>
+
+  <body></body>
+</html>

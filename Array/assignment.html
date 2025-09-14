@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array in JavaScript</title>
+    <script>
+      let arr = [];
+      let i = 0;
+      for (;;) {
+        let num = Number(prompt("Enter a number (0 to stop):"));
+        if (num === 0) break;
+        // arr.push(num);
+        arr[i] = num;
+        i++;
+      }
+      let sum = 0;
+      for (let x of arr) {
+        sum += x;
+      }
+      document.write(`Sum: ${sum}`);
+      document.write(`<br>Average:  ${sum / arr.length}`);
+    </script>
+  </head>
+
+  <body></body>
+</html>
