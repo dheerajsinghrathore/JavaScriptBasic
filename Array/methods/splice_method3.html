@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array methods in JavaScript</title>
+    <script>
+      let arr = [10, 20, 30, 40, 50];
+      let removed = arr.splice(2, 1, 60, 70); // from index 2 remove 1 element and add 60, 70
+      // arr is now [10, 20, 60, 70, 40, 50]
+      // removed is [30]
+      document.write(`${arr}<br>`);  // [10, 20, 60, 70, 40, 50]
+      document.write(removed + "<br>"); // [30]
+    </script>
+  </head>
+
+  <body></body>
+</html>
