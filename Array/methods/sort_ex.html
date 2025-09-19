@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sort in Array JavaScript</title>
+    <script>
+      let sports = ["cricket", "Soccer", "football", "tennis"];
+      for (let sp of sports) {
+        document.write(sp + ", "); // cricket Soccer football tennis
+      }
+      document.write("<br>");
+      sports.sort();
+      document.write("After Sorting - <br>");
+      for (let sp of sports) {
+        document.write(sp + " "); // Soccer cricket  football tennis - Soccer comes first because S is uppercase
+      }
+      document.write("<br>");
+      document.write(sports.length); // 4
+    </script>
+  </head>
+
+  <body></body>
+</html>
