@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number Sort in Array JavaScript</title>
+    <script>
+      let num = [1, 2, 25, 5, 10, 15];
+      document.write("Before Sorting - <br>");
+      document.write(num + "<br>"); // 1,2,25,5,10,15
+      document.write("After Sorting - <br>");
+      num.sort((a, b) => a - b); // Ascending order
+      document.write(num + "<br>"); // 1,2,5,10,15,25
+      num.sort((a, b) => b - a); // Descending order
+      document.write(num + "<br>"); // 25,15,10,5,2,1
+      document.write(num.length); // 6
+    </script>
+  </head>
+
+  <body></body>
+</html>
