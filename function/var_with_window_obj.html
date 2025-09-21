@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local scope variable</title>
+    <script>
+      var a = 30;
+      function localVar() {
+        var a = 10;
+        document.write(`Local a: -> ${a}` + "<br>");
+        document.write(`Global a: -> ${window.a}`);     // Accessing global variable using window object
+        // document.write(`Local a: -> ${a}` + "<br>"); // Uncaught ReferenceError: a is not defined
+        // but not with let or const
+      }
+      localVar();
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="Local" onclick="localVar()" />
+    <input type="button" value="Global" onclick="globalVar()" />
+  </body>
+</html>
