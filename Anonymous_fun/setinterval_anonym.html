@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SetInterval function</title>
+    <script>
+      function setUpTimer() {
+        // Using an anonymous function as the first argument to setInterval
+        setInterval(function () {
+          let dateTime = new Date();
+          document.write(dateTime);
+        }, 1000);
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="Show Date and Time" onclick="setUpTimer()" />
+  </body>
+</html>
