@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hoisting function</title>
+    <script>
+        document.write(x)       // undefined
+        var x = 10
+        document.write(x)
+
+        document.write(y)       // ReferenceError: Cannot access 'y' before initialization
+        let y = 10
+        document.write(y)
+    </script>
+  </head>
+
+  <body></body>
+</html>

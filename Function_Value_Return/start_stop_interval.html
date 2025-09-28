@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Set and Clear Interval function</title>
+    <script>
+      let id;
+      function setUpTimer() {
+        id = setInterval(showDateTime, 1000);
+      }
+      function stopTimer() {
+        clearInterval(id);
+      }
+      function showDateTime() {
+        let dateTime = new Date();
+        console.log(dateTime);
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="Start" onclick="setUpTimer()" />
+    <input type="button" value="Stop" onclick="stopTimer()" />
+  </body>
+</html>

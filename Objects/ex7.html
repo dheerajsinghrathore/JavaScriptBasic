@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object</title>
+    <script>
+      let player = new Object();
+      player.name = "Dheeraj";
+      player.city = "Bangalore";
+      player.age = 26;
+      console.log("Is name present: ", "name" in player); // True
+      console.log("Is age present: ", "age" in player);     // True
+
+      console.log("After Deleting age-");
+      delete player.age;        // delete is keyword
+      console.log("Is age present: ", "age" in player);     // False
+    </script>
+  </head>
+
+  <body></body>
+</html>

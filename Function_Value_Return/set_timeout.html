@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>setTimeout function</title>
+    <script>
+      function setUpTimer() {
+        setTimeout(showDateTime, 1000);
+      }
+      function showDateTime() {
+        let dateTime = new Date();
+        document.write(dateTime)
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="Show Date and Time" onclick="setUpTimer()">
+  </body>
+</html>
