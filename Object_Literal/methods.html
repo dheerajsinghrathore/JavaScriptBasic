@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding methods in Object Literal</title>
+    <script>
+      //Object Literal
+      let player = {
+        name: "Dheeraj",
+        surname: "Rathore",
+      };
+      console.log(`${player.name} ${player.surname} Players hitting sixes`);
+
+      player.address = new Object();
+      player.address.hno = 111;
+      player.address.city = "Patna";
+      console.log(
+        `H. No - ${player.address.hno}, City - ${player.address.city}`
+      );
+    </script>
+  </head>
+
+  <body></body>
+</html>

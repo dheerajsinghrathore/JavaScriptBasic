@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding methods in Object</title>
+    <script>
+      let player = {
+        name: "Dheeraj",
+        surname: "Rathore",
+        address: {
+          hno: 112,
+          city: "Patna",
+        },
+      };
+      for (const x in player) {
+        console.log(`Property: ${x} , Type is: ${typeof player[x]}`);
+      }
+      console.log(`${player.name} ${player.surname} Players hitting sixes`);
+      console.log(
+        `H. No - ${player.address.hno}, City - ${player.address.city}`
+      );
+    </script>
+  </head>
+
+  <body></body>
+</html>

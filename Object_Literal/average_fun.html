@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding methods of average in Object Literal</title>
+    <script>
+      //Object Literal
+      let player = {
+        name: "Dheeraj",
+        surname: "Rathore",
+        runs: [22,43,434,45,5,1],
+        calAverage: function() {
+            let sum = 0;
+            for (const run of player.runs) {
+                sum += run;
+            }
+            document.write(`Name - ${player.name}<br>`)
+            document.write(`Sum of run - ${(sum /player.runs.length).toFixed(2)}`)
+        }
+      };
+
+      player.calAverage();
+    </script>
+  </head>
+
+  <body></body>
+</html>
