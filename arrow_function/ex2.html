@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrow function Examples</title>
+    <script>
+      let square = (x) => x * x;
+      document.write(`Square of 5 is ${square(5)} <br>`);
+      let squares = (x) => {
+        return x * x;
+      };
+      document.write(`Square of 6 is ${squares(6)} <br>`);
+      let add = (a, b) => a + b;
+      document.write(`Sum of 5 and 6 is ${add(5, 6)} <br>`);
+      let addMore = (a, b) => {
+        return a + b;
+      };
+      document.write(`Sum of 7 and 8 is ${addMore(7, 8)} <br>`);
+      let area = (radius) => Math.PI * Math.pow(radius, 2);
+      document.write(`Area of circle is ${area.toFix(2)} <br>`);
+
+      let areaMore = (radius) => {
+        return Math.PI * Math.pow(radius, 2);
+      };
+      document.write(`Area of circle is ${areaMore.toFix(2)} <br>`);
+      let evenOdd = (num) => (num % 2 === 0 ? "Even" : "Odd");
+      document.write(`5 is ${evenOdd(5)} <br>`);
+      document.write(`6 is ${evenOdd(6)} <br>`);
+      let greet = () => "Hello World!";
+      document.write(greet());
+    </script>
+  </head>
+
+  <body></body>
+</html>

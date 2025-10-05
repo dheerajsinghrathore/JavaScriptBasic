@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      let a = 10;
+      let b = 10;
+      document.write(`a = ${a} and b = ${b}<br>`);
+      document.write(`${a === b} <br>`);
+      let str1 = "Dheeraj";
+      let str2 = "Dheeraj";
+      document.write(`str1 = ${str1} and str2 = ${str2}<br>`);
+      document.write(`${str1 === str2} <br>`);
+
+      let player1 = {
+        name: "Dheeraj",
+        surname: "Rathore",
+        toString: function () {
+          return this.name + " " + this.surname;
+        },
+      };
+      let player2 = {
+        name: "Dheeraj",
+        surname: "Rathore",
+        toString: function () {
+          return this.name + " " + this.surname;
+        },
+      };
+      document.write(`player1 = ${player1} <br>`);
+      document.write(`player2 = ${player2} <br>`);
+      document.write(`${player1 === player2} <br>`); // false because both are different objects in memory
+      document.write(`${player1.toString() === player2.toString()} <br>`); // true because both have same values
+    </script>
+  </head>
+
+  <body></body>
+</html>

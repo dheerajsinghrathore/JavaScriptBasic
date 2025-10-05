@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This Keyword Examples</title>
+    <script>
+      let player = {
+        name: "Sachin",
+        age: 47,
+        a: 30,
+        display: function () {
+          var a = 20;
+          document.write(`a = ${a}<br>`);
+          document.write(`a = ${window.a} <br>`);
+          document.write(`using this - ${this.a}`);
+        },
+      };
+
+      player.display();
+    </script>
+  </head>
+
+  <body></body>
+</html>

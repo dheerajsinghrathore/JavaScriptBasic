@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      var a = 10;
+      function show() {
+        var a = 20;
+        document.write(`a = ${a}<br>`);
+        document.write(`a = ${window.a} <br>`);
+        document.write(`using this - ${this.a}`);
+      }
+      show();
+    </script>
+  </head>
+
+  <body></body>
+</html>

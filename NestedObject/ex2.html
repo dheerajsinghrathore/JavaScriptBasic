@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Examples</title>
+    <script>
+      let player = {
+        name: "Dheeraj",
+        surname: "Rathore",
+        toString: function () {
+          return this.name + " " + this.surname;
+        },
+      };
+      let arr = [1, 2, 3, 4, 5];
+      let today = new Date();
+
+      document.write(`${arr} <br>`);
+      document.write(`${today} <br>`);
+      document.write(`Calling from toString function - ${player} <br>`);    // Implicitly calls toString function
+      document.write(`${player.name} ${player.surname}`);                 // Accessing properties of object directly
+    </script>
+  </head>
+
+  <body></body>
+</html>
