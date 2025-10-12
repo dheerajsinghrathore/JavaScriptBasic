@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM getElementById example</title>
+    <script>
+      function show() {
+        let ul = document.getElementById("nav1");
+        let allLi = ul.getElementsByTagName("li");
+        for (let li of allLi) {
+          console.log(li.innerText);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Welcome to SCA</h2>
+    <ul id="nav1">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM innerText example</title>
+    <script>
+      function operate() {
+        let h3 = document.querySelector("h3");
+        h3.innerText = "Our Vision";
+        let ul = document.querySelector("ul");
+        let allLi = ul.querySelectorAll("li");
+        allLi.forEach((li) => {
+          li.innerText = li.innerText.toUpperCase();
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>Our Mission</h3>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <p>
+      Click the button to change the text of the h3 element and make all list
+      items uppercase.
+    </p>
+    <p>
+      Before clicking the button, the h3 text is "Our Mission" and the list
+      items are in normal case.
+    </p>
+    <p>
+      After clicking the button, the h3 text changes to "Our Vision" and all
+      list items become uppercase.
+    </p>
+    <button onclick="operate()">Click Me</button>
+  </body>
+</html>
