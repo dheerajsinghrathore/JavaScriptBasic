@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DOM innerHTML example</title>
+    <title>DOM getAttribute and setAttribute example</title>
     <script>
-      function operate() {
-        let h3 = document.querySelector("h3");
-        h3.innerText = "Our Vision";
-        let ul = document.querySelector("ul");
-        let allLi = ul.querySelectorAll("li");
-        allLi.forEach((li) => {
-          li.innerText = li.innerText.toUpperCase();
-        });
+      function changeLogo() {
+        let img = document.querySelector("img");
+        img.setAttribute("src", "new-logo.png");
+        img.setAttribute("alt", "New Logo");
+        img.setAttribute("width", "200");
+        let p = document.querySelector("p");
+        p.innerText = "Updated Heading Attributes updated..!";
       }
     </script>
   </head>

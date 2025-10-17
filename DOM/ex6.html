@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Add new elements example</title>
+    <script>
+      function addPara() {
+        let para = document.createElement("p");
+        let node = document.createTextNode("This is a new paragraph.");
+        para.appendChild(node);
+        let div = document.querySelector("div");
+        div.appendChild(para);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h1>Welcome to Our Website</h1>
+      <p>We are glad to have you here.</p>
+      <p>Explore our content and enjoy your stay!</p>
+    </div>
+    <div id="container">
+      <h2>Welcome to Our Website</h2>
+    </div>
+    <h3>Our Mission</h3>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <p>
+      Click the button to change the text of the h3 element and make all list
+      items uppercase.
+    </p>
+    <p>
+      Before clicking the button, the h3 text is "Our Mission" and the list
+      items are in normal case.
+    </p>
+    <p>
+      After clicking the button, the h3 text changes to "Our Vision" and all
+      list items become uppercase.
+    </p>
+    <button onclick="addPara()">Add Para</button>
+  </body>
+</html>

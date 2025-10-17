@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Events example</title>
+    <script>
+      function changeColor(div) {
+        if (div.id === "div1") {
+          div.style.backgroundColor = "lightblue";
+        } else if (div.id === "div2") {
+          div.style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div
+      id="div1"
+      style="width: 100px; height: 100px; background-color: lightgray"
+      onclick="changeColor(this)"
+    >
+      Click me to change my color to lightblue
+    </div>
+    <div
+      id="div2"
+      style="width: 100px; height: 100px; background-color: lightgray"
+      onclick="changeColor(this)"
+    >
+      click me to change my color to red
+    </div>
+  </body>
+</html>

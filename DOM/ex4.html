@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DOM innerHTML example</title>
+    <title>DOM Add and Remove example</title>
     <script>
-      function operate() {
-        let h3 = document.querySelector("h3");
-        h3.innerText = "Our Vision";
-        let ul = document.querySelector("ul");
-        let allLi = ul.querySelectorAll("li");
-        allLi.forEach((li) => {
-          li.innerText = li.innerText.toUpperCase();
-        });
+      function decorate() {
+        let paragraphs = document.querySelector("p");
+        paragraphs.classList.add("success");
+      }
+      function undecorate() {
+        let paragraphs = document.querySelector("p");
+        paragraphs.classList.remove("success");
       }
     </script>
   </head>
@@ -35,6 +34,7 @@
       After clicking the button, the h3 text changes to "Our Vision" and all
       list items become uppercase.
     </p>
-    <button onclick="operate()">Click Me</button>
+    <button onclick="showDate()">Add Decoration</button>
+    <button onclick="showDate()">Remove Decoration</button>
   </body>
 </html>

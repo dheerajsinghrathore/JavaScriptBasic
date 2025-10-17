@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Event Cancel Test</title>
+    <script>
+      function verifyEventCancelled(event) {
+        ans = confirm("Did the link open in a new tab/window?");
+        if (ans) {
+          alert("Test failed: The link should not have opened.");
+        } else {
+          alert("Test passed: The link did not open.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="https://www.amazon.com" onclick="return(verifyEventCancelled())"
+      >Click me</a
+    >
+  </body>
+</html>
